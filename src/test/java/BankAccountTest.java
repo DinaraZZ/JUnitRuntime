@@ -42,6 +42,7 @@ public class BankAccountTest {
         // а также выбрасывается исключение IllegalStateException с соответствующим сообщением
         BankAccount account = new BankAccount("a", "b");
         String expectedMsg = "Счёт не активирован.";
+        assertNull(account.getCurrency());
         IllegalStateException exception = assertThrows(IllegalStateException.class, account::getAmount);
         assertEquals(expectedMsg, exception.getMessage());
     }
