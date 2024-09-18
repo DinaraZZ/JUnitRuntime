@@ -1,8 +1,6 @@
 import exceptions.InsufficientFundsException;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Executable;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BankAccountTest {
